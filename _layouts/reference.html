@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>cited in</h2>
+<ul>
+    {%- for note in site.pages -%}
+        {%- if note.references contains \"{{ page.path }}\" -%}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
+        {%- endif -%}
+    {%- endfor -%}
+</ul>

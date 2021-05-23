@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{{ content }}
+{%- assign list_pages = site.pages | where: "list", page.title | sort: "list_order" -%}
+<ol>
+    {%- for note in list_pages -%}
+        {%- if note.title -%}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
+        {%- endif -%}
+    {%- endfor -%}
+</ol>

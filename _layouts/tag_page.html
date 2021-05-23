@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<ul>
+{%- for note in site.pages -%}
+{%- if note.tags contains \"{{ page.title }}\" -%}
+<li><a href="{{ note.url | relative_url }}">{{ note.title }}</a> <span class="category_tag">{{ note.category }}</span></li>
+{%- endif -%}
+{%- endfor -%}
+</ul>

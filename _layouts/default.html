@@ -1,0 +1,69 @@
+{%- assign related_links = page.related_notes -%}
+{%- assign references = page.references -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self'; object-src 'self'; child-src 'self'; form-action 'none'; base-uri 'self'" />
+<meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="container">
+
+      {%- include header.html -%}
+
+    <main>
+      {%- if page.category -%}
+      {%- unless page.category == "meta" -%}
+      <span class="category_tag">{{ page.category }}</span>
+      {%- endunless -%}
+      {%- endif -%}
+      <p>
+      {%- if page.parent -%}
+      {%- assign par = site.pages | where: "path", page.parent | first -%}
+        <span>up: <a href="{{ par.url | relative_url }}">{{ par.title }}</span></span>
+      {%- endif -%}
+      </p>
+        <h1>{{ page.title }}</h1>
+      {{ content }}
+
+      {%- if page.related_notes -%}
+      <h2>see also</h2>
+      <ul>
+      {%- for path in related_links -%}
+        {%- assign related = site.pages | where: "path", path | first -%}
+            {%- if related.title -%}
+        <li><a href="{{ related.url | relative_url }}">{{related.title | escape }}</a></li>
+            {%- endif -%}
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+
+      {%- if page.references -%}
+      <h2>references</h2>
+      <ol>
+          {%- for path in references -%}
+            {%- assign refpage = site.pages | where: "path", path | first -%}
+                {%- if refpage.excerpt -%}
+        <li>{{ refpage.excerpt }}</li>
+                {%- endif -%}
+            {%- endfor -%}
+      </ol>
+      {%- endif -%}
+
+      {%- if page.tags -%}
+      <div class="tagfooter">
+        <i>tags: </i>
+        {%- for tag in page.tags -%}
+          <span class="tag_span"><a href="/tags/{{ tag }}.html">{{ tag }}</a> / </span>
+          {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </main>
+
+    {%- include footer.html -%}
+
+    </div>
+  </body>
+</html>

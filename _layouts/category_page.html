@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%- assign cat_notes =  site.pages | where: "category", page.title -%}
+<ul>
+    {%- for note in cat_notes -%}
+    <li>
+        <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
+    </li>
+    {%- endfor -%}
+</ul>

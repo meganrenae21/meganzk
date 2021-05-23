@@ -1,0 +1,7 @@
+{%- assign notes = site.pages | where: "note", "true" -%}
+{%- assign sorted_notes = notes | sort: "note_id", "last" -%}
+<ul>
+    {%- for note in sorted_notes limit:10 -%}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
+    {%- endfor -%}
+</ul>
