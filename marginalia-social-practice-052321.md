@@ -4,7 +4,7 @@ permalink: marginalia-social-practice-052321
 isnote: true
 layout: default
 category: analysis
-tags: [books, marginalia, reading]
+tags: [books, marginalia, reading, favorite]
 references:
 - anderson-2011.md
 - oconnell-2012.md

@@ -4,7 +4,7 @@ permalink: 5W-story-planning-method-052321
 isnote: true
 layout: default
 category: concept
-tags: [fiction, novel_writing, storytelling, writing]
+tags: [fiction, novel_writing, storytelling, writing, favorite]
 references: ingermanson-2020.md
 related_notes: snowflake-mthod-052321.md
 note_id: 44
