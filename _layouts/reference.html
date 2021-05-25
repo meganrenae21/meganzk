@@ -7,7 +7,7 @@ layout: default
 <h2>cited in</h2>
 <ul>
     {%- for note in site.pages -%}
-        {%- if note.references contains \"{{ page.path }}\" -%}
+        {%- if note.references contains \"{{ page.name }}\" -%}
     <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
         {%- endif -%}
     {%- endfor -%}

@@ -44,7 +44,7 @@
       <h2>references</h2>
       <ol>
           {%- for path in references -%}
-            {%- assign refpage = site.pages | where: "path", path | first -%}
+            {%- assign refpage = site.pages | where: "name", path | first -%}
                 {%- if refpage.excerpt -%}
         <li>{{ refpage.excerpt }}</li>
                 {%- endif -%}
