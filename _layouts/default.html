@@ -21,7 +21,7 @@
       {%- endif -%}
       <p>
       {%- if page.parent -%}
-      {%- assign par = site.pages | where: "name", page.parent | first -%}
+      {%- assign par = site.pages | where: "path", page.parent | first -%}
         <span>up: <a href="{{ par.url | relative_url }}">{{ par.title }}</a></span>
       {%- endif -%}
       </p>
@@ -32,7 +32,7 @@
       <h2>see also</h2>
       <ul>
       {%- for path in related_links -%}
-        {%- assign related = site.pages | where: "name", path | first -%}
+        {%- assign related = site.pages | where: "path", path | first -%}
             {%- if related.title -%}
         <li><a href="{{ related.url | relative_url }}">{{related.title | escape }}</a></li>
             {%- endif -%}
@@ -44,7 +44,7 @@
       <h2>references</h2>
       <ol>
           {%- for path in references -%}
-            {%- assign refpage = site.pages | where: "name", path | first -%}
+            {%- assign refpage = site.pages | where: "path", path | first -%}
                 {%- if refpage.excerpt -%}
         <li>{{ refpage.excerpt }}</li>
                 {%- endif -%}
