@@ -21,7 +21,7 @@
       {%- endif -%}
       <p>
       {%- if page.parent -%}
-      {%- assign par = site.pages | where: "path", page.parent | first -%}
+      {%- assign par = site.pages | where: "name", page.parent | first -%}
         <span>up: <a href="{{ par.url | relative_url }}">{{ par.title }}</a></span>
       {%- endif -%}
       </p>
