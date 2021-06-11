@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{{ content }}
+{%- assign nb = site.data.notebooks | where: "subject", page.notebook | first -%}
+
+<h2>Contents</h2>
+
+{%- for section in nb.tabs -%}
+<h3>{{ section.tab }}</h3>
+<ol>
+{%- for note in section.sheets -%}
+{%- assign extension = ".html" -%}
+{%- assign base = "../" -%}
+<li><a href="{{ note.perma | append: extension | prepend: base }}">{{ note.sheet }}</li>
+{%- endfor -%}
+</ol>
+{%- endfor -%}
+

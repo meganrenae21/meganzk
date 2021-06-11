@@ -9,9 +9,24 @@ h1, h2, h3, h4, h5, h6 { font-size: 12.5px; margin: 0px; margin-top: 22px; font-
 
 p, ul, ol { margin: 0px; color: var(--text-color); }
 
+p { text-align: justify; }
+
 a { text-decoration: underline; color: var(--link-color); }
 
 a:hover { color: var(--background-color); background-color: var(--base-color); }
+
+div.tagfooter {
+    text-align: center;
+    margin-top: 13px;
+}
+
+span.category_tag { 
+    font-style: italic;
+    color: var(--code-color-2);
+    background-color: var(--code-color-11);
+    border: 1px solid var(--code-color-2);
+    text-transform: uppercase;
+}
 
 @media only screen and (max-device-width: 500px) { * { font-size: 12px !important; } }
 

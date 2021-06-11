@@ -14,4 +14,4 @@ related_notes:
 - determinism-def.md
 ---
 
-the belief that agents have free will, and therefore [determinism](determinism-def) must be false; an [incompatibilist](incompatbilism-def) view.
+the belief that agents have free will, and therefore [determinism](determinism-def) must be false; an [incompatibilist](incompatibilism-def) view.

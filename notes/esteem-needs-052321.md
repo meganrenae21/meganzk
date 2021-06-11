@@ -27,4 +27,4 @@ As for the second subset, we can see how this would be a precursor to [Self-actu
 
 In both cases, the order of this need makes more sense than the so-called "lower" needs.
 
-Previous: [Belongingness & Love Needs](belongingness-love-needs-052321.md) Next: [Self-actualization](self-actualization-052321)
+Previous: [Belongingness & Love Needs](belongingness-love-needs-052321) Next: [Self-actualization](self-actualization-052321)

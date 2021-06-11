@@ -25,4 +25,4 @@ note_id: 35
 
 ## footnotes
 
-[^1]: There have been many extended applications beyond these four needs, and even Maslow himself later realized that self-actualization *wasn't* necessarily the final step in a fulfilled life. As [Kaltko-Rivera](kaltko-rivera-2006) points out, Maslow was interested in the spiritual idea of self-transcendence as a step beyond self-actualization.
+[^1]: There have been many extended applications beyond these four needs, and even Maslow himself later realized that self-actualization *wasn't* necessarily the final step in a fulfilled life. As [Koltko-Rivera](koltko-rivera-2006) points out, Maslow was interested in the spiritual idea of self-transcendence as a step beyond self-actualization.

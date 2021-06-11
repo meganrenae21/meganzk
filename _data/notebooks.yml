@@ -1,0 +1,22 @@
+- subject: Clojure
+  loc: "/notebooks/clojure.html"
+  tabs: 
+  - tab: "Clojure for the Brave and True"
+    source: "higginbotham-2015"
+    order: 1
+    sheets: 
+    - sheet: "Clojure Forms"
+      perma: "clojure-forms-060421"
+      order: 1
+    - sheet: "Control Flow in Clojure"
+      perma: "control-flow-clojure-060421"
+      order: 2
+    - sheet: "True and False and Booleans in Clojure"
+      perma: "true-false-boolean-clojure-060421"
+      order: 3
+    - sheet: "Defining Constants in Clojure"
+      perma: "defining-constants-clojure-060421"
+      order: 4
+    - sheet: "Clojure Data Structures"
+      perma: "clojure-data-structures-060421"
+      order: 5

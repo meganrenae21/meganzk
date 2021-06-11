@@ -19,12 +19,12 @@
       <span class="category_tag">{{ page.category }}</span>
       {%- endunless -%}
       {%- endif -%}
-      <p>
+
       {%- if page.parent -%}
       {%- assign par = site.pages | where: "name", page.parent | first -%}
-        <span>up: <a href="{{ par.url | relative_url }}">{{ par.title }}</a></span>
+        <br /><span>up: <a href="{{ par.url | relative_url }}">{{ par.title }}</a></span>
+
       {%- endif -%}
-      </p>
         <h1>{{ page.title }}</h1>
       {{ content }}
 
@@ -32,9 +32,9 @@
       <h2>see also</h2>
       <ul>
       {%- for path in related_links -%}
-        {%- assign related = site.pages | where: "path", path | first -%}
+        {%- assign related = site.pages | where: "name", path | first -%}
             {%- if related.title -%}
-        <li><a href="{{ related.url | relative_url }}">{{related.title | escape }}</a></li>
+        <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>
             {%- endif -%}
         {%- endfor -%}
       </ul>

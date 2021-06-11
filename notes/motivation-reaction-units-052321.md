@@ -6,7 +6,9 @@ layout: default
 category: analysis
 tags: [fiction, novel_writing, storytelling, writing]
 references: ingermanson-unknown.md
-related_notes: scenes-and-structure-052321.md
+related_notes: 
+- scenes-and-structure-052321.md
+- snowflake-method-052321.md
 note_id: 32
 ---
 

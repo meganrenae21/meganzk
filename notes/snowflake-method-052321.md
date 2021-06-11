@@ -6,7 +6,10 @@ layout: default
 category: analysis
 tags: [fiction, novel_writing, storytelling, writing]
 references: ingermanson-2020.md
-related-notes: 5W-story-planning-method-052321.md
+related_notes: 
+- 5W-story-planning-method-052321.md
+- scenes-and-structure-052321.md
+- motivation-reaction-units-052321.md
 note_id: 33
 ---
 

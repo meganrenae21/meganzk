@@ -6,7 +6,7 @@ layout: default
 category: concept
 tags: [fiction, novel_writing, storytelling, writing, favorite]
 references: ingermanson-2020.md
-related_notes: snowflake-mthod-052321.md
+related_notes: snowflake-method-052321.md
 note_id: 44
 ---
 
